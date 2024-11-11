@@ -50,7 +50,7 @@ if page == "Intro page":
     st.markdown("- Conclusion and recommendations")
     st.markdown("The Aspect Selector dropdown menu on the left will take you to the different pages of the analyses that were focused on.")   
 
-    IntroImage = Image.open(url4) #source: https://unsplash.com/s/photos/citi-bike
+    IntroImage = Image.open(url4/'citibike1.jpg') #source: https://unsplash.com/s/photos/citi-bike
     st.image(IntroImage)
 
     ### Create a dual axis line chart page ###

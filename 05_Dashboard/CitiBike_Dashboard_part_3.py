@@ -173,5 +173,5 @@ else:
     st.markdown('- In the warmer and more popular months, electric bikes are used between 35 to 40 percent of the total bike use. As these bikes are more expensive to rent, I would recommend exploring opportunities that will increase the use of electric bikes and therefore increase revenue.')
     st.markdown('- At present, we do not have enough information in our current data to make a determination on which bike type is more popular. I would recommend Citi Bike survey its customers on bike preference to determine if there are sufficient quantites of each bike type available at the most popular stations.')
 
-    bikesign = Image.open(url5)  #source: https://unsplash.com/s/photos/citi-bike
+    bikesign = Image.open("./05_Dashboard/citibike2.jpg")  #source: https://unsplash.com/s/photos/citi-bike
     st.image(bikesign)

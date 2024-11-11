@@ -29,9 +29,12 @@ page = st.sidebar.selectbox('Select an aspect of the analysis',
 url = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/df_top_500_routes.csv'
 url2 = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/df_top_500_routes.csv'
 url3 = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/daily_rides_per_day.csv'
+url4 = 'https://github.com/MSikos/Citi-Bike/blob/24d45b14abb6a766602d0ba476c153341888cc0a/05_Dashboard/citibike1.jpg'
+url5 = 'https://github.com/MSikos/Citi-Bike/blob/24d45b14abb6a766602d0ba476c153341888cc0a/05_Dashboard/citibike2.jpg'
 df_small = pd.read_csv(url, index_col = 0)
 top500 = pd.read_csv(url2, index_col = 0)
 daily_rides = pd.read_csv(url3)
+
 
 # ######################################### DEFINE THE PAGES #####################################################################
 
@@ -47,7 +50,7 @@ if page == "Intro page":
     st.markdown("- Conclusion and recommendations")
     st.markdown("The Aspect Selector dropdown menu on the left will take you to the different pages of the analyses that were focused on.")   
 
-    IntroImage = Image.open("citibike1.jpg") #source: https://unsplash.com/s/photos/citi-bike
+    IntroImage = Image.open(url4) #source: https://unsplash.com/s/photos/citi-bike
     st.image(IntroImage)
 
     ### Create a dual axis line chart page ###
@@ -170,5 +173,5 @@ else:
     st.markdown('- In the warmer and more popular months, electric bikes are used between 35 to 40 percent of the total bike use. As these bikes are more expensive to rent, I would recommend exploring opportunities that will increase the use of electric bikes and therefore increase revenue.')
     st.markdown('- At present, we do not have enough information in our current data to make a determination on which bike type is more popular. I would recommend Citi Bike survey its customers on bike preference to determine if there are sufficient quantites of each bike type available at the most popular stations.')
 
-    bikesign = Image.open("citibike2.jpg")  #source: https://unsplash.com/s/photos/citi-bike
+    bikesign = Image.open(url5)  #source: https://unsplash.com/s/photos/citi-bike
     st.image(bikesign)

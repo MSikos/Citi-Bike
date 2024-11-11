@@ -120,7 +120,7 @@ elif page == 'Interactive map showing popular bike trips':
 
     st.write("Interactive map showing popular bike trips in New York")
 
-    path_to_html = "NYC Bike Trips Top 500 Routes.html"
+    path_to_html = "./05_Dashboard/NYC Bike Trips Top 500 Routes.html"
 
     # Read file and keep in variable 
     with open(path_to_html, 'r') as f:

@@ -26,11 +26,9 @@ page = st.sidebar.selectbox('Select an aspect of the analysis',
 
 ########################## Import data ###########################################################################################
 
-url = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/df_top_500_routes.csv'
+url = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/reduced_data_to_7_percent.csv'
 url2 = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/df_top_500_routes.csv'
 url3 = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/daily_rides_per_day.csv'
-#url4 = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/citibike1.jpg'
-#url5 = 'https://raw.githubusercontent.com/MSikos/Citi-Bike/refs/heads/main/05_Dashboard/citibike2.jpg'
 df_small = pd.read_csv(url, index_col = 0)
 top500 = pd.read_csv(url2, index_col = 0)
 daily_rides = pd.read_csv(url3)

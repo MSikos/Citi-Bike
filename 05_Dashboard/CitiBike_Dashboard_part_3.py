@@ -102,7 +102,7 @@ elif page == 'The Top 20 most popular start stations':
     top20 = df_groupby_bar.nlargest(20, 'value')
     fig = go.Figure(go.Bar(x = top20['start_station_name'], y = top20['value']))
 
-    fig = go.Figure(go.Bar(x = top20['start_station_name'], y = top20['value'], marker={'color':top20['value'],'colorscale': 'Blues'}))
+    fig = go.Figure(go.Bar(x = top20['start_station_name'], y = top20['value'], marker={'color':top20['value'],'colorscale': 'Blugrn'}))
     fig.update_layout(
     title = 'Top 20 most popular start stations in New York',
     xaxis_title = 'Start stations',
